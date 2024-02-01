@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Lecture Time Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #ffdab9; 
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #ffa07a; 
+    }
+
+    td {
+      background-color: #fff;
+    }
+
+    td[colspan="3"] {
+      background-color: #98fb98; 
+    }
+
+    td[colspan="2"] {
+      background-color: #add8e6; 
+    }
+
+    td[colspan="2"]:empty::before {
+      content: "FREE";
+    }
+
+    td[colspan="2"]:not(:empty) {
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+ <h1><i>Lecture Timetable</i></h1>
+  <table border = "1" bg color ="peach">
+    <tr>
+      <td>Days/Time</td>
+      <b><td>8-9</td>
+      <td>9-10</td>
+      <td>10-11</td>
+      <td>11-12</td>
+      <td>12-1</td>
+      <td>1-2</td>
+      <td>2-3</td>
+      <td>3-4</td>
+      <td>4-5</td></b>
+    </tr>
+    <tr>
+      <td>MON</td>
+      <td colspan ="3"></td>
+      <td colspan = "2"><center><b>CSC 205</b><center></td>
+      <td></td>
+      <td colspan = "2"><b>MTH 231</b></td>
+      <td></td>
+        </tr>
+     <tr>
+       <td><b>TUE</td>
+       <td></td>
+       <td colspan = "2"><center><b>CSC 215</b></center></td>
+       <td></td>
+       <td><center><b>CSC 203</b></center></td>
+       <td colspan = "3"></td>
+       <td><center><b>GST 217</b></center></td>
+    </tr>
+    <tr>
+      <td><b>WED</td>
+        <td><b>MTH 201<b></b></td>
+        <td colspan = "2"></td>
+        <td colspan = "2"><center><b>CSC 205</b></center></td>
+        <td colspan = "4"></td>
+        </tr>
+      <tr>
+        <td><b>THURS</td>
+          <td colspan = "4"></td>
+          <td><b>MTH 231</b></td>
+          <td colspan = "4"></td>
+          </tr>
+        <tr>
+          <td><b>FRI</td>
+            <td colspan = "2"><b>STA 203</b></td>
+            <td colspan = "7"></td>
+            </tr>
+      
+</body>
+
+</html>
